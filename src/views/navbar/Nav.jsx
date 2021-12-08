@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Nav.css'
 
 export const Nav = () => {
@@ -6,9 +7,17 @@ export const Nav = () => {
         <div>
             <h1>Kickball</h1>
             <ul>
-                <li>Home</li>
-                <li>Teams</li>
-                <li>Players</li>
+                <Link to="/">
+                    <li>Home</li>
+                </Link>
+
+                <Link to="/teamlist">
+                    <li>Teams</li>
+                </Link>
+                
+                <Link to="/playerlist">
+                    <li>Players</li>
+                </Link>
             </ul>
         </div>
     )
