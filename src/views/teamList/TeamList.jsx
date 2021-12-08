@@ -21,7 +21,7 @@ export const TeamList = () => {
             {teams.map((team) => (
                 <li key={team.id}>
                     <Link className='link' to={`/teams/${team.id}`}>
-                    <p>{team.name}</p>
+                    {team.name}
                     </Link>
                 </li>
             ))}

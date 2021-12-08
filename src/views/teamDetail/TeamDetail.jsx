@@ -9,25 +9,33 @@ export const TeamDetail = () => {
     const[team, setTeam] = useState(null)
 
     useEffect(() => {
-        getTeamById(teamId).then((res) => setTeam(res))
+        getTeamById(teamId)
+        .then((res) => setTeam(res))
     }, [teamId])
 
     if(!team) return <h2>Loading...</h2>
 
     return (
         <div>
-            <h1>{team.name}</h1>
-        <h3>{team.city}, {team.state}</h3>
-        <ul>
-        {team.players.map((player) => (
+           <h4>Team</h4>
+      <p>
+        <Link to='/teams' className='link'>
+          Back to Teams
+        </Link>
+      </p>
+      <h1>{team.name}</h1>
+      <p>
+        From {team.city}, {team.state}
+      </p>
+      <ul>
+        {team.players.map((player) => {
+          return (
             <li key={player.id}>
-                <Link className='link' to={`/players/${player.id}`}>
-                    <p>{player.position} - {player.name}</p>
-                </Link>
+              {player.position} - {player.name}
             </li>
-        ))}
-        </ul>
-        <Link className='link' to='/teams'><p>Team Information</p></Link>
+          );
+        })}
+      </ul>
         </div>
     )
 }

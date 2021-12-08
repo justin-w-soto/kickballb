@@ -20,7 +20,7 @@ export const PlayerList = () => {
         <div className="Playerlist">
               <h1>Player List</h1>
               <ul>
-            {players.map((player) => (
+                {players.map((player) => (
                 <li key={player.id}>
                     <Link className='link' to={`/players/${player.id}`}>
                         <p>{player.name}</p>
