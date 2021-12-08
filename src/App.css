@@ -1,4 +1,6 @@
 .App {
     background: rgb(47, 49, 49);
     color: white;
+    list-style: none;
 }
+
