@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <main className="App">
-      <Nav />
+      <Nav className="Navbar"/>
      
       <Switch>
         <Route path="/" exact component={Home} />
