@@ -38,5 +38,40 @@ h2 {
 }
 
 li:hover {
-    color: #DD6E42;
+    color: tomato;
 }
+
+.Ball {
+    width: 300px;
+    height: 355px;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 0.5s 1;
+  
+  }
+  
+  @keyframes bounce {
+    10%{
+      width: 300px;
+      height: 300px;
+  
+    }
+    30%{
+      height: 300px;
+      width: 300px;
+    }
+    50%{
+      width: 335px;
+      height: 200px;
+      transform: translateY(170px);
+      
+    }
+    75%{
+      height: 300px;
+      width: 335px;
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  
+  }
