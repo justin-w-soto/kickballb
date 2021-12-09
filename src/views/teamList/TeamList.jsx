@@ -16,12 +16,12 @@ export const TeamList = () => {
     if(loading) return <h1>Loading teams...</h1>
     return (
         <div>
-            <h1>Team List</h1>
+            <h1>Teams</h1>
             <ul>
             {teams.map((team) => (
                 <li key={team.id}>
                     <Link className='link' to={`/teams/${team.id}`}>
-                    {team.name}
+                    <li>{team.name}</li>
                     </Link>
                 </li>
             ))}

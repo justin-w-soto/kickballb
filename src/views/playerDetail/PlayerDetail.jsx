@@ -21,7 +21,7 @@ export const PlayerDetail = () => {
         <div>
             <h1>{player.name}</h1>
             <Link className='link' to={`/teams/${player.teams.id}`}>
-            <h3>{player.teams.name}</h3>
+            <h2>{player.teams.name}</h2>
             </Link>
             <h3>{player.teams.city} {player.teams.state}</h3>        
             <h3>{player.position}</h3>

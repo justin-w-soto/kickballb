@@ -19,9 +19,9 @@ export const TeamDetail = () => {
 
     return (
         <div>
-            <h4>Team</h4>
+            
             <h1>{team.name}</h1>
-            <div>{team.city} {team.state}</div>
+            <h2>{team.city} {team.state}</h2>
            
         <ul>
             {team.players.map((player) => {

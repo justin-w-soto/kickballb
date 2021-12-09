@@ -18,12 +18,12 @@ export const PlayerList = () => {
 
     return (
         <div className="Playerlist">
-              <h1>Player List</h1>
+              <h1>Players</h1>
               <ul>
                 {players.map((player) => (
                 <li key={player.id}>
                     <Link className='link' to={`/players/${player.id}`}>
-                        <p>{player.name}</p>
+                        <li>{player.name}</li>
                     </Link>
                 </li>
             ))}

@@ -1,6 +1,7 @@
 
 .App {
-    color: white;
+    color: #EAEAEA;
+   text-align: center;
 
 }
 
@@ -12,4 +13,30 @@ a {
 
 ul {
     list-style: none;
+    font-size: 1.5rem;
+}
+
+body {
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 90rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+li:hover {
+    color: #DD6E42;
 }

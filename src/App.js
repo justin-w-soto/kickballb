@@ -12,8 +12,9 @@ function App() {
   return (
     <Router>
       <main className="App">
+      <header>
       <Nav className="Navbar"/>
-     
+      </header>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/teamlist" exact component={TeamList} />
