@@ -1,5 +1,5 @@
 import React from 'react'
-import kickball from '../../kickball.png'
+import kickball from '../../assets/kickball.png'
 
 
 export const Home = () => {
