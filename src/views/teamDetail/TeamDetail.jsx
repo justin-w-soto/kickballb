@@ -26,7 +26,7 @@ export const TeamDetail = () => {
         <ul>
             {team.players.map((player) => {
             return (
-            <li key={player.id}>{player.position} {player.name}</li>
+            <h3 key={player.id}>{player.position}: {player.name}</h3>
           );
         })}
       </ul>

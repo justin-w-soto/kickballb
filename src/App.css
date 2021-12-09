@@ -16,6 +16,10 @@ ul {
     font-size: 1.5rem;
 }
 
+li:hover {
+    color: tomato;
+}
+
 body {
     display: flex;
     justify-content:space-around ;
@@ -37,8 +41,8 @@ h2 {
     font-size: 2rem;
 }
 
-li:hover {
-    color: tomato;
+h3 {
+  font-size: 1.5rem;
 }
 
 .Ball {
@@ -46,28 +50,28 @@ li:hover {
     height: 355px;
     border-radius: 50%;
     position: relative;
-    animation: bounce 0.5s 1;
+    animation: bounce .7s 2;
   
   }
   
   @keyframes bounce {
     10%{
       width: 300px;
-      height: 300px;
+      height: 350px;
   
     }
     30%{
-      height: 300px;
+      height: 350px;
       width: 300px;
     }
     50%{
-      width: 335px;
+      width: 355px;
       height: 200px;
       transform: translateY(170px);
       
     }
     75%{
-      height: 300px;
+      height: 350px;
       width: 335px;
     }
     100%{
