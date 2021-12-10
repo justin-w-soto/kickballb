@@ -5,6 +5,18 @@
 
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+
+fieldset {
+  width: 10rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 a {
     list-style: none;
     text-decoration: none;

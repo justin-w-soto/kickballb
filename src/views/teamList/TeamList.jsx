@@ -17,6 +17,7 @@ export const TeamList = () => {
     return (
         <div>
             <h1>Teams</h1>
+            <Link to='/teams/new' className='App-link'>Add a Team</Link>
             <ul>
             {teams.map((team) => (
                 <li key={team.id}>
