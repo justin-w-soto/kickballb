@@ -1,23 +1,28 @@
 import React from 'react'
 import {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
-import { getTeams } from '../../services/teams';
+import { deleteTeamById, getTeams } from '../../services/teams';
 
 export const TeamList = () => {
-    const [loading, setLoading] = useState(true);
+   
     const [teams, setTeams] = useState([]);
-        
-    useEffect(() => {
-        getTeams()
-        .then((res) => setTeams(res))
-        .finally(() => setLoading(false))
-    }, [])
-
-    const handleDelete = () => {
-        const shoulDelete = window.confirm('Are you sure that you want to delete this team?')
+ 
+    const loadTeams = async () => {
+        const res = await getTeams()
+        setTeams(res)
     }
 
-    if(loading) return <h1>Loading teams...</h1>
+    useEffect(() => {loadTeams()},[])
+    
+
+    const handleDelete = async ({id, name}) => {
+        const shoulDelete = window.confirm(`Are you sure you want to delete the ${name} from the roster?`)
+        
+        if (shoulDelete) await deleteTeamById(id)
+        await loadTeams()
+    }
+
+
     return (
         <div>
             <h1>Teams</h1>
@@ -25,10 +30,14 @@ export const TeamList = () => {
             <ul>
             {teams.map((team) => (
                 <li key={team.id}>
+                    
                     <Link className='link' to={`/teams/${team.id}`}>
                     <li>{team.name}</li>
                     </Link>
-                    <button type="button" onClick={handleDelete}>Delete</button>
+
+                    <button 
+                    type="button" 
+                    onClick={() => handleDelete({ id: team.id, name: team.name })}>Delete</button>
                 </li>
             ))}
             </ul>
