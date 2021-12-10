@@ -4,6 +4,7 @@ import { setupServer } from 'msw/node'
 import { rest } from 'msw'
 import { MemoryRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import { CreatePlayer } from './CreatePlayer';
+import userEvent from '@testing-library/user-event';
 
 const server = setupServer()
 

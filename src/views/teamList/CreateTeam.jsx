@@ -29,7 +29,7 @@ export const CreateTeam = () => {
                 <label htmlFor="state">State</label>
                 <input id="state" state="state" type="text" value={state} onChange={(e) => setState(e.target.value)}/>
 
-                <input type="submit" value="Add" />
+                <input type="submit" value="Add" aria-label="Add a Team" />
             </form>
         </fieldset>
         </>
