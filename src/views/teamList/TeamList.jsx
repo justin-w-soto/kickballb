@@ -13,6 +13,10 @@ export const TeamList = () => {
         .finally(() => setLoading(false))
     }, [])
 
+    const handleDelete = () => {
+        const shoulDelete = window.confirm('Are you sure that you want to delete this team?')
+    }
+
     if(loading) return <h1>Loading teams...</h1>
     return (
         <div>
@@ -24,6 +28,7 @@ export const TeamList = () => {
                     <Link className='link' to={`/teams/${team.id}`}>
                     <li>{team.name}</li>
                     </Link>
+                    <button type="button" onClick={handleDelete}>Delete</button>
                 </li>
             ))}
             </ul>
