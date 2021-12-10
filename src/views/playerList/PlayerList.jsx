@@ -34,6 +34,7 @@ export const PlayerList = () => {
                     <Link className='link' to={`/players/${player.id}`}>
                         <li>{player.name}</li>
                     </Link>
+                    <button type="button">Edit</button>
                     <button type="button" onClick={() => handleDelete({ id: player.id, name: player.name })}>Delete</button>
                 </li>
             ))}

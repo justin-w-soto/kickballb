@@ -34,6 +34,7 @@ export const TeamList = () => {
                     <li>{team.name}</li>
                     </Link>
 
+                    <button type="button">Edit</button>
                     <button 
                     type="button" 
                     onClick={() => handleDelete({ id: team.id, name: team.name })}>Delete</button>
