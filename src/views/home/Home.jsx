@@ -6,7 +6,8 @@ export const Home = () => {
     return (
         <div>
             <img className="Ball" src={kickball} alt='red ball'/>
-            <h1>Kickball</h1>
+            <h1 className="title">Kickball</h1>
+          
         </div>
     )
 }
