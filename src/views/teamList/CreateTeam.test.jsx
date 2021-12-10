@@ -30,4 +30,8 @@ it('should add a new team to the the team detail page', async () => {
     )
 
     screen.getByText('Add a Team')
+
+    const nameField = screen.getByLabelText(/name/i)
+    const cityField = screen.getByLabelText(/city/i)
+    const stateField = screen.getByLabelText(/state/i)
 })
