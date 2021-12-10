@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { deleteTeamById, getTeams } from '../../services/teams';
 
 export const TeamList = () => {
-   
     const [teams, setTeams] = useState([]);
  
     const loadTeams = async () => {
@@ -30,7 +29,7 @@ export const TeamList = () => {
             <ul>
             {teams.map((team) => (
                 <li key={team.id}>
-                    
+
                     <Link className='link' to={`/teams/${team.id}`}>
                     <li>{team.name}</li>
                     </Link>
