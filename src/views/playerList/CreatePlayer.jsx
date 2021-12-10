@@ -30,7 +30,7 @@ export const CreatePlayer = () => {
                 <label htmlFor="position">Position</label>
                 <input id="position" position="position" type="text" value={position} onChange={(e) => setPosition(e.target.value)}/>
                 
-                <input type="submit" value="Add a Team" />
+                <input type="submit" value="Add" aria-label="Add a Player" />
             </form>
         </fieldset>
         </>
