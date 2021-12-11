@@ -2,8 +2,58 @@
 
 exports[`should render a TeamList page 1`] = `
 <div>
-  <h1>
-    Loading teams...
-  </h1>
+  <div>
+    <h1>
+      Teams
+    </h1>
+    <a
+      class="App-link"
+      href="/teams/new"
+    >
+      Add a Team
+    </a>
+    <ul>
+      <li>
+        <a
+          class="link"
+          href="/teams/1"
+        >
+          <li>
+            Hero Ballers From OuterSpace
+          </li>
+        </a>
+        <button
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          type="button"
+        >
+          Delete
+        </button>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="/teams/2"
+        >
+          <li>
+            Magic Mazoos
+          </li>
+        </a>
+        <button
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          type="button"
+        >
+          Delete
+        </button>
+      </li>
+    </ul>
+  </div>
 </div>
 `;

@@ -13,14 +13,12 @@ export const TeamList = () => {
 
     useEffect(() => {loadTeams()},[])
     
-
     const handleDelete = async ({id, name}) => {
-        const shoulDelete = window.confirm(`Are you sure you want to delete the ${name} from the roster?`)
+        const shouldDelete = window.confirm(`Are you sure you want to delete the ${name} from the roster?`)
         
-        if (shoulDelete) await deleteTeamById(id)
+        if (shouldDelete) await deleteTeamById(id)
         await loadTeams()
     }
-
 
     return (
         <div>
@@ -31,7 +29,7 @@ export const TeamList = () => {
                 <li key={team.id}>
 
                     <Link className='link' to={`/teams/${team.id}`}>
-                    <li>{team.name}</li>
+                        <li>{team.name}</li>
                     </Link>
 
                     <button type="button">Edit</button>

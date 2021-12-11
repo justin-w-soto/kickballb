@@ -15,12 +15,10 @@ export const PlayerList = () => {
 
     useEffect(() => {loadPlayer()},[])
 
-    
-
     const handleDelete = async ({id, name}) => {
-        const shoulDelete = window.confirm(`Are you sure you want to delete ${name} from the roster?`)
+        const shouldDelete = window.confirm(`Are you sure you want to delete ${name} from the roster?`)
 
-        if(shoulDelete) await deletePlayerById(id)
+        if(shouldDelete) await deletePlayerById(id)
         await loadPlayer()
     }
 
@@ -31,14 +29,15 @@ export const PlayerList = () => {
               <ul>
                 {players.map((player) => (
                 <li key={player.id}>
+
                     <Link className='link' to={`/players/${player.id}`}>
                         <li>{player.name}</li>
                     </Link>
                     <button type="button">Edit</button>
                     <button type="button" onClick={() => handleDelete({ id: player.id, name: player.name })}>Delete</button>
                 </li>
-            ))}
-        </ul>
+                ))}
+                </ul>
         </div>
     )
 }
