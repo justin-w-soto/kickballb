@@ -34,7 +34,7 @@ export const TeamList = () => {
 
                     <button type="button">Edit</button>
                     <button 
-                    type="button" 
+                    type="button" aria-label={`Delete ${team.name}`}
                     onClick={() => handleDelete({ id: team.id, name: team.name })}>Delete</button>
                 </li>
             ))}

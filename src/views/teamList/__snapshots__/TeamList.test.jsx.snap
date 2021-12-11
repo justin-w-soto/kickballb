@@ -28,6 +28,7 @@ exports[`should render a TeamList page 1`] = `
           Edit
         </button>
         <button
+          aria-label="Delete Hero Ballers From OuterSpace"
           type="button"
         >
           Delete
@@ -48,6 +49,7 @@ exports[`should render a TeamList page 1`] = `
           Edit
         </button>
         <button
+          aria-label="Delete Magic Mazoos"
           type="button"
         >
           Delete

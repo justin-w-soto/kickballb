@@ -51,3 +51,15 @@ it('should render a TeamList page', async () => {
   expect(container).toMatchSnapshot();
 });
 
+it('should delete a team from the list', async () => {
+  render(
+    <MemoryRouter>
+      <TeamList />
+    </MemoryRouter>
+  )
+  await screen.findByText(/Magic Mazoos/i)
+  const deleteBtn = screen.getByRole('button', { name: 'Delete Magic Mazoos' });
+
+  // userEvent.click(deleteBtn)
+})
+
