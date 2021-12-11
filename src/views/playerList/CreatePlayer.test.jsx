@@ -2,7 +2,7 @@
 import { render, screen } from '@testing-library/react';
 import { setupServer } from 'msw/node'
 import { rest } from 'msw'
-import { MemoryRouter } from 'react-router-dom/cjs/react-router-dom.min';
+// import { MemoryRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import {  Router, Route } from 'react-router-dom'
 import { CreatePlayer } from './CreatePlayer';
 import { createMemoryHistory } from 'history'

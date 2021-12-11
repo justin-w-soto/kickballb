@@ -5,10 +5,12 @@ import { deleteTeamById, getTeams } from '../../services/teams';
 
 export const TeamList = () => {
     const [teams, setTeams] = useState([]);
+    const [loading, setLoading] =useState(true)
  
     const loadTeams = async () => {
         const res = await getTeams()
         setTeams(res)
+        setLoading(false)
     }
 
     useEffect(() => {loadTeams()},[])
@@ -16,9 +18,12 @@ export const TeamList = () => {
     const handleDelete = async ({id, name}) => {
         const shouldDelete = window.confirm(`Are you sure you want to delete the ${name} from the roster?`)
         
-        if (shouldDelete) await deleteTeamById(id)
+        if (shouldDelete) 
+        await deleteTeamById(id)
         await loadTeams()
     }
+    
+    if (loading) return <p>Loading Teams...</p>
 
     return (
         <div>

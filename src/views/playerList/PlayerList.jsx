@@ -7,10 +7,12 @@ import './PlayerList.css'
 
 export const PlayerList = () => {
     const [players, setPlayers] = useState([])
+    const [loading, setLoading] =useState(true)
 
     const loadPlayer = async () => {
         const res = await getPlayers()
         setPlayers(res)
+        setLoading(false)
     }
 
     useEffect(() => {loadPlayer()},[])
@@ -21,6 +23,9 @@ export const PlayerList = () => {
         if(shouldDelete) await deletePlayerById(id)
         await loadPlayer()
     }
+
+       
+    if (loading) return <p>Loading Players...</p>
 
     return (
         <div className="Playerlist">

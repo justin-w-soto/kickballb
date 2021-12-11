@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import { TeamList } from './TeamList';
 import { setupServer } from 'msw/node'
 import { rest } from 'msw'
-import { Route, MemoryRouter } from 'react-router-dom'
-import userEvent from '@testing-library/react'
+import { MemoryRouter } from 'react-router-dom'
+// import userEvent from '@testing-library/react'
 
 const mockTeam1 = {
   "id":1,
@@ -58,7 +58,8 @@ it('should delete a team from the list', async () => {
     </MemoryRouter>
   )
   await screen.findByText(/Magic Mazoos/i)
-  const deleteBtn = screen.getByRole('button', { name: 'Delete Magic Mazoos' });
+  
+  // const deleteBtn = screen.getByRole('button', { name: 'Delete Magic Mazoos' });
 
   // userEvent.click(deleteBtn)
 })
