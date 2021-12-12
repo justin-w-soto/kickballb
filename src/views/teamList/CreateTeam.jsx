@@ -19,7 +19,7 @@ export const CreateTeam = () => {
     return (
         <>
         <fieldset>
-            <legend>Add a Team</legend>
+        <legend>Add a Team</legend>
            <TeamForm 
             name = {name}
             city = {city}
