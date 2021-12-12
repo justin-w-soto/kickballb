@@ -21,7 +21,7 @@ function App() {
       </header>
       <Switch>
         <Route path="/teams/new" exact component={CreateTeam} />
-        <Route path="/teamlist/update" exact component={UpdateTeam} />
+        <Route path="/teams/:id/update" exact component={UpdateTeam} />
         <Route path="/players/new" exact component={CreatePlayer} />
         <Route path="/players/update" exact component={UpdatePlayer}/>
         <Route path="/" exact component={Home} />

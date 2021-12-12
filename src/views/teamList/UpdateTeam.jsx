@@ -4,7 +4,8 @@ import { useHistory } from 'react-router-dom'
 import { TeamForm } from '../../components/teams/TeamForm'
 import { updateTeamById } from '../../services/teams'
 
-export const UpdateTeam = () => {
+export const UpdateTeam = ({ match }) => {
+    const { id } = match.params
     const [name, setName] = useState('')
     const [city, setCity] = useState('')
     const [state, setState] = useState('')
@@ -13,7 +14,7 @@ export const UpdateTeam = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const res = await updateTeamById({ name, city, state  })
+        const res = await updateTeamById(id,{ name, city, state  })
         history.push(`/teams/${res[0].id}`)
     }
 
