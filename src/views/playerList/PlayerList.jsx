@@ -20,11 +20,11 @@ export const PlayerList = () => {
     const handleDelete = async ({id, name}) => {
         const shouldDelete = window.confirm(`Are you sure you want to delete ${name} from the roster?`)
 
-        if(shouldDelete) await deletePlayerById(id)
+        if(shouldDelete) 
+        await deletePlayerById(id)
         await loadPlayer()
     }
 
-       
     if (loading) return <p>Loading Players...</p>
 
     return (
@@ -33,12 +33,16 @@ export const PlayerList = () => {
               <Link to='/players/new' className='App-link'>Add a New Player</Link>
               <ul>
                 {players.map((player) => (
-                <li key={player.id}>
+                    <li key={player.id}>
 
                     <Link className='link' to={`/players/${player.id}`}>
                         <li>{player.name}</li>
                     </Link>
-                    <button type="button">Edit</button>
+
+                    <Link className='link' to={`players/${player.id}/update`}>
+                        <button>Edit</button>
+                    </Link>
+                 
                     <button type="button" onClick={() => handleDelete({ id: player.id, name: player.name })}>Delete</button>
                 </li>
                 ))}

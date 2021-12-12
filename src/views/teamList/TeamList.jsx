@@ -26,7 +26,7 @@ export const TeamList = () => {
     if (loading) return <p>Loading Teams...</p>
 
     return (
-        <div>
+        <div className='TeamList'>
             <h1>Teams</h1>
             <Link to='/teams/new' className='App-link'>Add a Team</Link>
             <ul>
