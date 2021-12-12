@@ -15,7 +15,6 @@ export const TeamList = () => {
 
     useEffect(() => {loadTeams()},[])
 
-    
     const handleDelete = async ({id, name}) => {
         const shouldDelete = window.confirm(`Are you sure you want to delete the ${name} from the roster?`)
         
@@ -31,23 +30,22 @@ export const TeamList = () => {
             <h1>Teams</h1>
             <Link to='/teams/new' className='App-link'>Add a Team</Link>
             <ul>
-            {teams.map((team) => (
-                <li key={team.id}>
+                {teams.map((team) => (
+                    <li key={team.id}>
 
-                    <Link className='link' to={`/teams/${team.id}`}>
-                        <li>{team.name}</li>
-                    </Link>
+                        <Link className='link' to={`/teams/${team.id}`}>
+                            <li>{team.name}</li>
+                        </Link>
 
-                    <Link className='link' to={`teams/${team.id}/update`}>
-                                    <button>Edit Team</button>
-                    </Link>
-
-                                       
-                    <button 
-                    type="button" aria-label={`Delete ${team.name}`}
-                    onClick={() => handleDelete({ id: team.id, name: team.name })}>Delete</button>
-                </li>
-            ))}
+                        <Link className='link' to={`teams/${team.id}/update`}>
+                            <button>Edit</button>
+                        </Link>
+                                        
+                        <button 
+                        type="button" aria-label={`Delete ${team.name}`}
+                        onClick={() => handleDelete({ id: team.id, name: team.name })}>Delete</button>
+                    </li>
+                ))}
             </ul>
         </div>
     )

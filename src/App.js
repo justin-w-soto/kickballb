@@ -23,7 +23,7 @@ function App() {
         <Route path="/teams/new" exact component={CreateTeam} />
         <Route path="/teams/:id/update" exact component={UpdateTeam} />
         <Route path="/players/new" exact component={CreatePlayer} />
-        <Route path="/players/update" exact component={UpdatePlayer}/>
+        <Route path="/players/:id/update" exact component={UpdatePlayer}/>
         <Route path="/" exact component={Home} />
         <Route path="/teamlist" exact component={TeamList} />
         <Route path="/teams/:id" exact component={TeamDetail} />

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import { PlayerForm } from '../../components/PlayerForm'
 import { createPlayer } from '../../services/players'
 
 export const CreatePlayer = () => {
@@ -19,19 +20,15 @@ export const CreatePlayer = () => {
     return (
         <>
         <fieldset>
-            <legend>Add a Player</legend>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name</label>
-                <input id="name" name="name" type="text" value={name} onChange={(e) => setName(e.target.value)}/>
-
-                <label htmlFor="teamId">Team ID</label>
-                <input id="teamId" teamId="teamId" type="text" value={teamId} onChange={(e) => setTeamId(e.target.value)}/>
-
-                <label htmlFor="position">Position</label>
-                <input id="position" position="position" type="text" value={position} onChange={(e) => setPosition(e.target.value)}/>
-                
-                <input type="submit" value="Add" aria-label="Add a Player" />
-            </form>
+            <legend>New Player</legend>
+                <PlayerForm 
+                 name = {name}
+                 teamId = {teamId}
+                 position = {position}
+                 setName = {setName}
+                 setTeamId = {setTeamId}
+                 setPosition = {setPosition}
+                 handleSubmit = {handleSubmit}/>           
         </fieldset>
         </>
     )
