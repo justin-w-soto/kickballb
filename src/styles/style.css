@@ -1,0 +1,313 @@
+.Toplink {
+  color: #343d3a;
+}
+
+.Toplink a:Hover {
+  background: #EF476F;
+}
+
+.TeamList {
+  height: 55vh;
+  width: 98.4vw;
+}
+
+.TeamList ul {
+  display: flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-weight: bold;
+}
+
+.TeamList a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 2rem;
+}
+
+.TeamList a:hover {
+  color: #EF476F;
+}
+
+.TeamList h1 {
+  font-size: 4.5rem;
+  color: #343d3a;
+}
+
+form {
+  width: 10vw;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  width: 20vw;
+  text-align: center;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teams {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.teamBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.Toplink {
+  color: #343d3a;
+  font-weight: bold;
+}
+
+.Toplink a:Hover {
+  background: #EF476F;
+}
+
+.Playerlist {
+  font-size: 2rem;
+  color: #343d3a;
+  height: 40vh;
+  width: 98.4vw;
+}
+
+.Playerlist ul {
+  display: flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-count: 5;
+          column-count: 5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-weight: bold;
+}
+
+.Playerlist a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 2rem;
+}
+
+.Playerlist a:hover {
+  color: #EF476F;
+}
+
+header {
+  -webkit-box-shadow: 5px 5px 5px GRAY;
+          box-shadow: 5px 5px 5px GRAY;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 25vh;
+  width: 98.4vw;
+  background: #26547C;
+  color: #fcfcfc;
+  font-size: 4rem;
+  font-family: "Signika Negative", sans-serif;
+  position: fixed;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header a {
+  color: #fcfcfc;
+  text-decoration: none;
+  list-style: none;
+  font-size: 4.5rem;
+  font-family: "Signika Negative", sans-serif;
+}
+
+header a:hover {
+  color: #EF476F;
+}
+
+.Nav {
+  margin-right: 5rem;
+}
+
+.Ballcontainer {
+  text-align: center;
+  height: 50vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 10rem;
+}
+
+.Ball {
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: bounce .7s 2;
+          animation: bounce .7s 2;
+}
+
+@-webkit-keyframes bounce {
+  10% {
+    width: 300px;
+    height: 355px;
+  }
+  30% {
+    height: 350px;
+    width: 320px;
+  }
+  50% {
+    width: 355px;
+    height: 250px;
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+  }
+  75% {
+    height: 200px;
+    width: 355px;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes bounce {
+  10% {
+    width: 300px;
+    height: 355px;
+  }
+  30% {
+    height: 350px;
+    width: 320px;
+  }
+  50% {
+    width: 355px;
+    height: 250px;
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+  }
+  75% {
+    height: 200px;
+    width: 355px;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.footy {
+  font-size: 1.5rem;
+  color: black;
+  background: #06D6A0;
+  height: 3vh;
+  width: 100vw;
+  margin-top: 99vh;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: "Signika Negative", sans-serif;
+  height: 95vh;
+  background: #f5f5f5;
+}
+
+main button {
+  background: #06D6A0;
+  color: #343d3a;
+  font-size: 1.5rem;
+  font-family: "Signika Negative", sans-serif;
+  width: 8rem;
+  border-radius: 7%;
+  -webkit-box-shadow: 5px 5px 5px GRAY;
+          box-shadow: 5px 5px 5px GRAY;
+  margin: 5px;
+}
+
+main button:hover {
+  background: #EF476F;
+}
+
+main a {
+  color: #343d3a;
+  text-decoration: none;
+}
+
+main li {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */

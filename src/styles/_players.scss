@@ -1,0 +1,37 @@
+@import './variables';
+
+
+.Toplink{
+    color: $MainText;
+    font-weight: bold;
+    a:Hover {
+        background: $BtnHover;
+    }
+}
+
+.Playerlist {
+    font-size: $SmallTxt;
+    color: $MainText;
+    height: 40vh;
+    width: 98.4vw;
+    
+
+    ul {
+        display: flexbox;
+        flex-direction: column;
+        column-count: 5;
+        
+        justify-content: space-between;
+        align-content: center;
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+        list-style: none;
+        font-size: $SmallTxt;
+       
+        &:hover{
+            color: $BtnHover;
+        }
+    }
+}

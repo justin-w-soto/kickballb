@@ -1,0 +1,41 @@
+
+
+
+header {
+    box-shadow: $PrimaryBtnBoxShadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25vh;
+    width: 98.4vw;
+    background: #26547C; 
+    color: #fcfcfc;
+    font-size: 4rem;
+    font-family: $MainTextFont;
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    a {
+        color: $HeaderText;
+        text-decoration: none;
+        list-style: none;
+        font-size: $MedTxt;
+        font-family: $MainTextFont;
+        
+        &:hover{
+            color: $BtnHover;
+        }
+    }
+    position: fixed;
+    
+}
+
+.Nav {
+    margin-right: 5rem;
+    
+ }
+
+ 

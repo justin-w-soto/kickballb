@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 export const TeamForm = ({ 
     name, 
     city, 
@@ -16,7 +15,8 @@ export const TeamForm = ({
             id="name" 
             name="name" 
             type="text" 
-            value={name} onChange={(e) => setName(e.target.value)}/>
+            value={name} 
+            onChange={(e) => setName(e.target.value)}/>
     
             <label htmlFor="city">City</label>
             <input 
@@ -31,7 +31,8 @@ export const TeamForm = ({
             id="state" 
             state="state" 
             type="text" 
-            value={state} onChange={(e) => setState(e.target.value)}/>
+            value={state} 
+            onChange={(e) => setState(e.target.value)}/>
 
             <input 
             type="submit" 

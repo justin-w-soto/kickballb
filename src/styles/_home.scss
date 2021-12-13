@@ -1,0 +1,46 @@
+.Ballcontainer {
+  text-align: center;
+  height: 50vh;
+}
+
+.title {
+  text-align: center;
+  font-size: $BigTxt;
+  
+}
+
+.Ball {
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce .7s 2;
+  
+  }
+  
+  @keyframes bounce {
+    10%{
+      width: 300px;
+      height: 355px;
+  
+    }
+    30%{
+      height: 350px;
+      width: 320px;
+    }
+    50%{
+      width: 355px;
+      height: 250px;
+      transform: translateY(250px);
+      
+    }
+    75%{
+      height: 200px;
+      width: 355px;
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  
+  }

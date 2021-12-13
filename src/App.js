@@ -7,18 +7,19 @@ import { CreateTeam } from './views/teamList/CreateTeam'
 import { UpdateTeam } from './views/teamList/UpdateTeam'
 import { CreatePlayer } from './views/playerList/CreatePlayer'
 import { UpdatePlayer } from './views/playerList/UpdatePlayer'
+import { Footer } from './views/footer/Footer'
 import { Home } from './views/home/Home'
 import { Nav } from './views/navbar/Nav'
-import './App.css';
+import './styles/style.css'
 
 
 function App() {
   return (
     <Router>
-      <main className="App">
       <header>
       <Nav className="Navbar"/>
       </header>
+      <main>
       <Switch>
         <Route path="/teams/new" exact component={CreateTeam} />
         <Route path="/teams/:id/update" exact component={UpdateTeam} />
@@ -31,6 +32,7 @@ function App() {
         <Route path="/players/:id" exact component={PlayerDetail} />
       </Switch>
       </main>
+      <Footer />
     </Router>
   );
 }

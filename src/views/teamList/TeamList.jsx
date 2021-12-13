@@ -28,8 +28,8 @@ export const TeamList = () => {
     return (
         <div className='TeamList'>
             <h1>Teams</h1>
-            <Link to='/teams/new' className='App-link'>Add a Team</Link>
-            <ul>
+            <Link to='/teams/new' className='Toplink'><h3>Add a Team</h3> </Link>
+            <ul className='teams'>
                 {teams.map((team) => (
                     <li key={team.id}>
 
@@ -38,12 +38,16 @@ export const TeamList = () => {
                         </Link>
 
                         <Link className='link' to={`teams/${team.id}/update`}>
-                            <button>Edit</button>
+                            <button className='teamBtn'>Edit</button>
                         </Link>
                                         
                         <button 
-                        type="button" aria-label={`Delete ${team.name}`}
-                        onClick={() => handleDelete({ id: team.id, name: team.name })}>Delete</button>
+                        className='teamBtn'
+                        type="button" 
+                        aria-label={`Delete ${team.name}`}
+                        onClick={() => handleDelete({ id: team.id, name: team.name })}>
+                        Delete
+                        </button>
                     </li>
                 ))}
             </ul>

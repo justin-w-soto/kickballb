@@ -4,7 +4,7 @@ import kickball from '../../assets/kickball.png'
 
 export const Home = () => {
     return (
-        <div>
+        <div className='Ballcontainer'>
             <img className="Ball" src={kickball} alt='red ball'/>
             <h1 className="title">Kickball</h1>
           

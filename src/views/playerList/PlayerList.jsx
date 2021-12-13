@@ -2,7 +2,6 @@ import React from 'react'
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { deletePlayerById, getPlayers } from "../../services/players"
-import './PlayerList.css'
 
 
 export const PlayerList = () => {
@@ -30,7 +29,7 @@ export const PlayerList = () => {
     return (
         <div className="Playerlist">
               <h1>Players</h1>
-              <Link to='/players/new' className='App-link'>Add a New Player</Link>
+              <Link to='/players/new' className='Toplink'>Add a New Player</Link>
               <ul>
                 {players.map((player) => (
                     <li key={player.id}>
