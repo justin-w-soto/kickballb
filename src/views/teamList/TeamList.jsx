@@ -23,7 +23,7 @@ export const TeamList = () => {
         await loadTeams()
     }
     
-    if (loading) return <p>Loading Teams...</p>
+    if (loading) return <p className='loading'>Loading Teams...🌈</p>
 
     return (
         <div className='TeamList'>

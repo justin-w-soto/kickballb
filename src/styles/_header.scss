@@ -1,5 +1,5 @@
 
-
+@import './variables';
 
 header {
     box-shadow: $PrimaryBtnBoxShadow;
@@ -8,7 +8,7 @@ header {
     justify-content: space-around;
     height: 25vh;
     width: 98.4vw;
-    background: #26547C; 
+    background: #2b3238; 
     color: #fcfcfc;
     font-size: 4rem;
     font-family: $MainTextFont;

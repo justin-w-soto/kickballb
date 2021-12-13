@@ -4,7 +4,6 @@
 @import './variables';
 @import './header';
 @import './home';
-@import './footer';
 
 
 @mixin flexCenter() {
@@ -47,5 +46,9 @@ main {
     list-style: none;
   }
 
+}
+
+.loading {
+  font-size: $BigTxt;
 }
 

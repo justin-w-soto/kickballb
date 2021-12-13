@@ -24,7 +24,7 @@ export const PlayerList = () => {
         await loadPlayer()
     }
 
-    if (loading) return <p>Loading Players...</p>
+    if (loading) return <p className='loading'>Loading Players...🌈</p>
 
     return (
         <div className="Playerlist">
