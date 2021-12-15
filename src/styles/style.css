@@ -78,6 +78,7 @@ fieldset {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  text-align: center;
 }
 
 .link {
@@ -117,6 +118,9 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
   font-weight: bold;
@@ -279,8 +283,7 @@ main button {
   font-family: "Signika Negative", sans-serif;
   width: 8rem;
   border-radius: 7%;
-  -webkit-box-shadow: 5px 5px 5px GRAY;
-          box-shadow: 5px 5px 5px GRAY;
+  border: none;
   margin: 5px;
 }
 

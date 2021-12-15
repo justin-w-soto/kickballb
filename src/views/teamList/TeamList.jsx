@@ -5,13 +5,13 @@ import { deleteTeamById, getTeams } from '../../services/teams';
 
 export const TeamList = () => {
     const [teams, setTeams] = useState([]);
-    const [loading, setLoading] =useState(true)
+    const [loading, setLoading] =useState(true);
  
     const loadTeams = async () => {
-        const res = await getTeams()
-        setTeams(res)
-        setLoading(false)
-    }
+        const res = await getTeams();
+        setTeams(res);
+        setLoading(false);
+    };
 
     useEffect(() => {loadTeams()},[])
 
