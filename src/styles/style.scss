@@ -1,0 +1,54 @@
+
+@import './teams';
+@import './players';
+@import './variables';
+@import './header';
+@import './home';
+
+
+@mixin flexCenter() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+body {
+  background: $PrimaryBckgrnd
+}
+
+main { 
+  @include flexCenter();
+  font-family: $MainTextFont;
+  height: 95vh;
+  background: $PrimaryBckgrnd;
+
+  button {
+    background: $PrimaryBtn;
+    color: $PrimaryBtnTxtClr;
+    font-size: $PrimaryBtnFontSz;
+    font-family: $PrimaryBtnFont;
+    width: $PrimaryBtnWidth;
+    border-radius: $PrimaryBtnBorderRadius;
+    border: none;
+    margin: $PrimaryBtnMargin;
+      &:hover {
+        background: $BtnHover;
+      }
+    }
+
+  a {
+    color: $MainText;
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+}
+
+.loading {
+  font-size: $BigTxt;
+}
+

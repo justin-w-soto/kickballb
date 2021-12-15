@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a simple homepage 1`] = `
+<div>
+  <div>
+    <img
+      alt="red ball"
+      class="Ball"
+      src="kickball.png"
+    />
+    <h1>
+      Kickball
+    </h1>
+  </div>
+</div>
+`;

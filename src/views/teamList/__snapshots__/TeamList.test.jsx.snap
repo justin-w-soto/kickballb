@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a TeamList page 1`] = `
+<div>
+  <div>
+    <h1>
+      Teams
+    </h1>
+    <a
+      class="App-link"
+      href="/teams/new"
+    >
+      Add a Team
+    </a>
+    <ul>
+      <li>
+        <a
+          class="link"
+          href="/teams/1"
+        >
+          <li>
+            Hero Ballers From OuterSpace
+          </li>
+        </a>
+        <button
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          aria-label="Delete Hero Ballers From OuterSpace"
+          type="button"
+        >
+          Delete
+        </button>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="/teams/2"
+        >
+          <li>
+            Magic Mazoos
+          </li>
+        </a>
+        <button
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          aria-label="Delete Magic Mazoos"
+          type="button"
+        >
+          Delete
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

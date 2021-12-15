@@ -1,0 +1,76 @@
+@import './variables';
+
+.Toplink {
+color: $MainText;
+    a:Hover {
+        background: $BtnHover;
+    }
+}
+
+.TeamList {
+    height: 55vh;
+    width: 98.4vw;
+
+    ul {
+        display: flexbox;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+        list-style: none;
+        font-size: $SmallTxt;
+       
+        &:hover{
+            color: $BtnHover;
+        }
+    }
+
+  
+h1 {
+    font-size: $MedTxt;
+    color: $MainText;
+    
+}
+
+}
+
+form {
+    width: 10vw;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {
+    width: 20vw;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.teamBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
